@@ -25,10 +25,10 @@ public class LoginTest extends BaseTest {
         // Enter “secret_sauce” password
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
         // Click on ‘LOGIN’ button
-        driver.findElement(By.xpath("//input[@value='LOGIN']")).click();
+        driver.findElement(By.xpath("//input[@id='login-button']")).click();
         // Verify the text “PRODUCTS”
         String expectedText = "PRODUCTS";
-        String actualText = driver.findElement(By.xpath("//div[text()='PRODUCTS']")).getText();
+        String actualText = driver.findElement(By.xpath("//div[text()='Products']")).getText();
         Assert.assertEquals(expectedText, actualText);
     }
 
@@ -41,10 +41,10 @@ public class LoginTest extends BaseTest {
         // Enter “secret_sauce” password
         driver.findElement(By.id("password")).sendKeys("secret_sauce");
         // Click on ‘LOGIN’ button
-        driver.findElement(By.xpath("//input[@value='LOGIN']")).click();
+        driver.findElement(By.xpath("//input[@id='login-button']")).click();
         // Verify that six products are displayed on page
         int expectedCount = 6;
-        int actualCount = driver.findElements(By.xpath("//div[@class='card-img-container']")).size();
+        int actualCount = driver.findElements(By.xpath("//div[@class='inventory_item']")).size();
         Assert.assertEquals(expectedCount, actualCount);
     }
 
