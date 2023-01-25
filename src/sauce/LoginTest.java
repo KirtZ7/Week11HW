@@ -46,7 +46,6 @@ public class LoginTest extends BaseTest {
         int expectedCount = 6;
         int actualCount = driver.findElements(By.xpath("//div[@class='card-img-container']")).size();
         Assert.assertEquals(expectedCount, actualCount);
-        driver.quit();
     }
 
 
