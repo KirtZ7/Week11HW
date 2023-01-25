@@ -25,7 +25,7 @@ public class TopMenuTest extends BaseTest {
         String expectedText = "Computers";
         String actualText = driver.findElement(By.xpath("//h1[text()='Computers']")).getText();
         Assert.assertEquals(expectedText, actualText);
-        driver.quit();
+;
     }
 
     @Test
@@ -36,7 +36,7 @@ public class TopMenuTest extends BaseTest {
         String expectedText = "Electronics";
         String actualText = driver.findElement(By.xpath("//h1[text()='Electronics']")).getText();
         Assert.assertEquals(expectedText, actualText);
-        driver.quit();
+
     }
 
     @Test
@@ -47,7 +47,7 @@ public class TopMenuTest extends BaseTest {
         String expectedText = "Apparel";
         String actualText = driver.findElement(By.xpath("//h1[text()='Apparel']")).getText();
         Assert.assertEquals(expectedText, actualText);
-        driver.quit();
+
     }
 
     @Test
@@ -58,7 +58,7 @@ public class TopMenuTest extends BaseTest {
         String expectedText = "Digital downloads";
         String actualText = driver.findElement(By.xpath("//h1[text()='Digital downloads']")).getText();
         Assert.assertEquals(expectedText, actualText);
-        driver.quit();
+
     }
 
     @Test
@@ -69,7 +69,7 @@ public class TopMenuTest extends BaseTest {
         String expectedText = "Books";
         String actualText = driver.findElement(By.xpath("//h1[text()='Books']")).getText();
         Assert.assertEquals(expectedText, actualText);
-        driver.quit();
+
     }
 
     @Test
@@ -80,7 +80,6 @@ public class TopMenuTest extends BaseTest {
         String expectedText = "Jewelry";
         String actualText = driver.findElement(By.xpath("//h1[text()='Jewelry']")).getText();
         Assert.assertEquals(expectedText, actualText);
-        driver.quit();
     }
 
     @Test

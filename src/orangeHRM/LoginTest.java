@@ -29,7 +29,6 @@ public class LoginTest extends BaseTest {
         String expectedText = "Welcome Admin";
         String actualText = driver.findElement(By.id("welcome")).getText();
         Assert.assertEquals(expectedText, actualText);
-        driver.quit();
     }
     @Test
     public void userShouldLoginSuccessfullyWithValidCredentials(){
@@ -44,7 +43,7 @@ public class LoginTest extends BaseTest {
         String expectedText = "Welcome";
         String actualText = driver.findElement(By.id("welcome")).getText();
         Assert.assertTrue(actualText.contains(expectedText));
-        driver.quit();
+
     }
 
 
@@ -56,7 +55,7 @@ public class LoginTest extends BaseTest {
         String expectedText = "Forgot Your Password?";
         String actualText = driver.findElement(By.xpath("//div[@class='form-header']")).getText();
         Assert.assertEquals(expectedText, actualText);
-        driver.quit();
+
     }
 
     @After
