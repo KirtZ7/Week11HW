@@ -20,7 +20,7 @@ public class LoginTest extends BaseTest {
     @Test
     public void userShouldNavigateToLoginPageSuccessfully(){
         // click on the ‘Sign In’ link
-        driver.findElement(By.xpath("//a[text()='Sign In']")).click();
+        driver.findElement(By.cssSelector("a[href='/users/sign_in']"));
         // Verify the text ‘Welcome Back!’
         String expectedText = "Welcome Back!";
         String actualText = driver.findElement(By.xpath("//h2[text()='Welcome Back!']")).getText();
@@ -29,7 +29,7 @@ public class LoginTest extends BaseTest {
     @Test
     public void verifyTheErrorMessage(){
         // click on the ‘Sign In’ link
-        driver.findElement(By.xpath("//a[text()='Sign In']")).click();
+        driver.findElement(By.cssSelector("a[href='/users/sign_in']"));
         // Enter invalid username
         driver.findElement(By.id("user_email")).sendKeys("invalidusername");
         // Enter invalid password
