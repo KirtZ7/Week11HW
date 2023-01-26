@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.junit.Assert;
+import org.openqa.selenium.WebDriver;
 
 public class LoginTest extends BaseTest {
 
@@ -28,7 +29,7 @@ public class LoginTest extends BaseTest {
         driver.findElement(By.xpath("//input[@id='login-button']")).click();
         // Verify the text “PRODUCTS”
         String expectedText = "PRODUCTS";
-        String actualText = driver.findElement(By.xpath("//div[text()='Products']")).getText();
+        String actualText = driver.findElement(By.xpath("(//span[@class='title'])")).getText();
         Assert.assertEquals(expectedText, actualText);
     }
 

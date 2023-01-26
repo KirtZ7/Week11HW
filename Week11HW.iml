@@ -22,7 +22,9 @@
           <root url="jar://$MODULE_DIR$/../../Soft/Jars/junit-4.13.2.jar!/" />
         </CLASSES>
         <JAVADOC />
-        <SOURCES />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.ideaLibSources/junit-4.13.2-sources.jar!/" />
+        </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">
